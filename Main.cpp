@@ -22,8 +22,7 @@ private:
 
 int main() 
 {
-	int size = 10;
-	Array<int , 10> data;
+	Array<int , 5> data;
 	memset(&data[0], 0, data.Size() * sizeof(int));
 
 	data[1] = 5;
@@ -32,5 +31,18 @@ int main()
 	for (size_t i = 0; i < data.Size(); i++)
 	{
 		cout << data[i] << endl;
+	}
+
+	cout << "******************************" << endl;
+	
+	Array<string, 5> data_string;
+	memset(&data_string[0], 0, data_string.Size() * sizeof(int));
+
+	data_string[1] = "Hello";
+	data_string[2] = "World";
+
+	for (size_t i = 0; i < data_string.Size(); i++)
+	{
+		cout << data_string[i] << endl;
 	}
 }
