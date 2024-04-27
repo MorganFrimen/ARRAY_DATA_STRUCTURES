@@ -34,13 +34,3 @@ int main()
 		cout << data[i] << endl;
 	}
 }
-
-/*
-	// Стек
-	int array[5];
-
-	// Куча
-	int size = 5;
-	int* heapArray = new int[size];
-	delete[] heapArray;
-*/
